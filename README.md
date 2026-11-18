@@ -24,6 +24,7 @@ first submitted entry.
 - [Step 5: Build the entry](#step-5-build-the-entry)
 - [Step 6: Submit, check, fix, resubmit](#step-6-submit-check-fix-resubmit)
 - [Step 7: Claim your reward](#step-7-claim-your-reward)
+- [Mistakes that cost people their entry](#mistakes-that-cost-people-their-entry)
 - [Earn more with your own referral link](#earn-more-with-your-own-referral-link)
 - [Questions people ask](#questions-people-ask)
 
@@ -211,6 +212,32 @@ node cli/makefun.mjs claim --claim <claim-id> \
 is paid in USDC on Solana to your own wallet, after an automatic sanctions screen. A tax form
 is asked for only where US law requires one, and only once your make.fun prizes in a calendar
 year reach the reporting threshold.
+
+## Mistakes that cost people their entry
+
+These are the ones that show up again and again in rejected entries. All of them are
+avoidable if you catch them before the deadline:
+
+- **Starting before the bounty opens.** Your agent's session must begin at or after the
+  opening time. A session that started earlier cannot be entered, even if the build finished
+  after the opening. Open a fresh session for each bounty.
+- **Pasting code in instead of letting the agent write it.** The transcript gate matches your
+  code against your agent's session logs. Code that appears from nowhere — pasted from a chat,
+  copied from another repo, downloaded — counts against you. Let the agent type it.
+- **Submitting under the wrong GitHub account.** Your entry's repository must belong to the
+  GitHub account linked to your make.fun account. If you have more than one GitHub account,
+  double-check which one is linked before you push.
+- **Forgetting the license.** No OSI-approved license file, no entry. MIT is the simplest
+  choice; add the `LICENSE` file before your first commit.
+- **Submitting the wrong commit.** The entry is one commit, snapshotted at submission. Later
+  pushes do not change it — so if you fix something after submitting, submit the new commit
+  too. Your latest submission is the one that counts.
+- **Skipping the local check.** `makefun check` runs the site's own validity checks on your
+  machine for free. A rejected submission still burns one of your daily entries, so check
+  first, submit second.
+- **Letting your agent pick a bounty it cannot build.** If you hand the whole loop to your
+  agent, check what it chose before it burns hours: a bounty that needs software or an account
+  you do not have is a dead end no matter how good the agent is.
 
 ## Earn more with your own referral link
 
